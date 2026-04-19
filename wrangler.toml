@@ -1,0 +1,9 @@
+name = "my-board"
+pages_build_output_dir = "public"
+compatibility_date = "2026-04-19"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "board-db"
+database_id = "bb4eb909-d4ad-46c5-bef8-dba8ff71e9f8"
+
