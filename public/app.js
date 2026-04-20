@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             detailDate.textContent = new Date(data.post.created_at).toLocaleString();
             detailContent.textContent = data.post.content;
 
-            if (currentUser && currentUser.username === data.post.username) {
+            if (currentUser && Number(currentUser.id) === Number(data.post.user_id)) {
                 postActions.classList.remove('hidden');
                 // Store post data in buttons for easy editing
                 btnEditPost.dataset.title = data.post.title;
